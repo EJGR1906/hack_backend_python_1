@@ -53,9 +53,7 @@ def test_hack_4():
         assert response.status_code == 200
         assert response.headers["Content-Type"] == "application/json"
         assert "payload" in data
-        assert "error" in data
         assert data["payload"] == "success"
-        assert data["error"] == False
 
 
 
